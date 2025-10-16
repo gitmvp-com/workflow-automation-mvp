@@ -1,0 +1,35 @@
+{
+  "name": "workflow-automation-mvp",
+  "version": "1.0.0",
+  "description": "Simplified workflow automation platform inspired by n8n",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "workflow",
+    "automation",
+    "n8n"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.17.50",
+    "typescript": "5.9.2",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "express": "5.1.0",
+    "axios": "1.12.0",
+    "uuid": "10.0.0",
+    "lodash": "4.17.21",
+    "luxon": "3.4.4",
+    "zod": "3.25.67",
+    "reflect-metadata": "0.2.2"
+  }
+}
